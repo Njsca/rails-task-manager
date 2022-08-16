@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+a{
+  text-decoration: none !important;
+  color: black !important;
+}
+a:hover{
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+ul{
+  list-style-type: circle;
+}
+body{
+  background-color: beige !important;
+}

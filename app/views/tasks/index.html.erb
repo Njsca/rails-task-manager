@@ -1,8 +1,8 @@
 <h1>My tasks</h1>
-<ul>
+<ul class="border color-grey d-flex justify-content-center flex-column">
   <% @tasks.each do |task| %>
     <li><%= link_to task.title, task_path(task) %></li>
   <% end %>
 </ul>
 
-<a href="/task/new">Add a new task</a>
+<a href="/task/new" class="btn"><i class="fa-solid fa-plus"></i> New task</a>

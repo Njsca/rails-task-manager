@@ -1,7 +1,10 @@
 <h1><%= @task.title %></h1>
-<h3><%= @task.details %></h3>
-<h3><%= @task.completed %></h3>
-
+<h5><%= @task.details %></h5>
+<% if @task.completed %>
+    <h6>Status: <i class="fa-solid fa-check"> Done</i></h6>
+  <% else %>
+    <h6>Status: <i class="fa-solid fa-xmark"></i> To do</h6>
+  <% end %>
 <%= link_to "Edit this task", edit_task_path(@task.id) %>
 <%= link_to "Delete this task", task_path(@task), data: {turbo_method: :delete, turbo_confirm: "Are your sure?"} %>
-<a href="/tasks">Back to tasks</a>
+<a href="/tasks"><i class="fa-solid fa-arrow-rotate-left"></i></a>
