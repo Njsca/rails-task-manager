@@ -1,8 +1,15 @@
-<h1>My tasks</h1>
-<ul class="border color-grey d-flex justify-content-center flex-column">
+<h1 class="mt-3">My tasks</h1>
+<div class="d-flex justify-content-center mt-5">
   <% @tasks.each do |task| %>
-    <li><%= link_to task.title, task_path(task) %></li>
+    <%= link_to task_path(task) do %>
+      <div class="card-product">
+        <div class="card-product-infos">
+          <h2> <%= task.title %> </h2>
+          <p><%= task.details %> </p>
+        </div>
+      </div>
+    <% end %>
   <% end %>
-</ul>
+</div>
 
-<a href="/task/new" class="btn"><i class="fa-solid fa-plus"></i> New task</a>
+<a href="/task/new" class="btn mt-4"><i class="fa-solid fa-plus"></i> New task</a>
