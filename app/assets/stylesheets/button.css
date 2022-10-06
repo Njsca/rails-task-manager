@@ -1,6 +1,6 @@
 .btn-1 {
-	color: #808080;
-	border: 1px solid #808080;
+	color: black;
+	border: 1px solid black;
 	border-radius: 50px;
 	padding: 10px 15px;
 	opacity: 0.6;
@@ -9,11 +9,11 @@
 .btn-1:hover {
 	opacity: 1;
 	text-decoration: none;
-	color: #808080;
+	/* color: #808080; */
   font-weight: bolder;
 }
 
-.btn-1:visited {
+/* .btn-1:visited {
 	color: #808080;
 	border: 1px solid #808080;
 	border-radius: 50px;
@@ -21,4 +21,4 @@
 	font-weight: lighter;
 	opacity: 0.6;
 	text-decoration: none;
-}
+} */
