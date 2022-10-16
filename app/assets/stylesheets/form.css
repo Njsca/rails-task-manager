@@ -1,0 +1,8 @@
+.new_task{
+  display: flex;
+  flex-direction: column;
+}
+
+.new_task input{
+  margin: 1rem;
+}
